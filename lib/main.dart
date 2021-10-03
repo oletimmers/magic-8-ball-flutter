@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:google_fonts/google_fonts.dart';
+
 
 void main() => runApp(
       MaterialApp(
@@ -11,10 +13,12 @@ class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.cyan,
       appBar: AppBar(
-        backgroundColor: Colors.blue.shade900,
-        title: Text('Ask me anything'),
+        backgroundColor: Colors.cyan[900],
+        title: Text('Ask Big Brother...',
+          style: GoogleFonts.bungee(),
+        ),
       ),
       body: Ball(),
     );
